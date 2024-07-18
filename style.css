@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.topo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topo-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.topo-titulo {
+    font-size: 24px;
+    color: #254017;
+    margin: 0 0 0 10px;
+}
+
+.limite-largura {
+    max-width: 1024px;
+}
+
+.orcamento-fundo {
+    width: 100%;
+    height: auto;
+    background-image: url("../imagens/bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orcamento-area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.orcamento-cabecalho {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #254017;
+}
+
+.orcamento-logo {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.orcamento-descricao {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 0 5px;
+}
+
+.orcamento-area-formulario {
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.orcamento-subtitulo-formulario {
+    font-size: 22px;
+    margin: 0 0 24px 0px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 16px;
+}
+
+.formulario input, .formulario select {
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+
+.formulario input {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.formulario select {
+    padding: 0 3px;
+}
+
+.formulario-campo-duplo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-campo-duplo div {
+    width: calc(50% - 10px);
+}
+
+.radio {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.radio div {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.radio input {
+    width: 15px;
+}
+
+.radio label {
+    margin: 0 0 0 8px;
+}
+
+.formulario button {
+    width: 160px;
+    height: 32px;
+    border: none;
+    background: #254017;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0 0 0;
+    cursor: pointer;
+}
+
+/* -------------------------- */
+
+.ofertas-area, .natureza-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.ofertas-titulo, .natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+.ofertas-descricao span {
+    font-weight: bold;
+}
+
+.ofertas-imagens {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oferta-imagem-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.oferta-quatro-imagens {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.oferta-quatro-imagens figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.oferta-imagem-destaque img, .oferta-quatro-imagens img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.natureza-duas-imagens {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.natureza-imagem {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.natureza-imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.natureza-imagem div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.natureza-imagem h3 {
+    font-size: 16px;
+}
+
+.natureza-imagem p {
+    color: grey;
+    font-size: 14px;
+    margin: 15px 0 0 0px;
+}
+
+footer {
+    width: 100%;
+    background: #254017;
+    margin: 32px 0 0 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.rodape-conteudo h2 {
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.rodape-conteudo div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.rodape-conteudo img {
+    width: 18px;
+}
+
+.rodape-conteudo span {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+}
+
+@media (max-width: 1100px) {
+    .limite-largura {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario button {
+        width: 100%;
+    }
+
+    .ofertas-imagens {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .oferta-quatro-imagens {
+        width: 100%;
+    }
+
+    .oferta-imagem-destaque, .oferta-quatro-imagens figure {
+        width: 100%;
+        height: 225px;
+        margin: 15px 0 0 0;
+    }
+
+    .natureza-duas-imagens {
+        flex-direction: column;
+    }
+
+    .natureza-imagem {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape-conteudo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 540px) {
+    .formulario-campo-duplo, .radio {
+        flex-direction: column;
+    }
+
+    .formulario-campo-duplo div, .radio div {
+        width: 100%;
+    }
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control input,
+.form-control select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control small {
+    color: red;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error input,
+.form-control.error select {
+    border-color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control.success input,
+.form-control.success select {
+    border-color: green;
+}
+
+.oferta-imagem-destaque figcaption, .oferta-quatro-imagens figcaption {
+    display: none;
+}
+
+.oferta-imagem-destaque figcaption.visible, .oferta-quatro-imagens figcaption.visible {
+    display: block;
+}
